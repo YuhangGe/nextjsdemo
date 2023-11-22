@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main>
       <div>
-        <Link href="/dashboard/a">Jump</Link>
+        <Link href="/test/a">Jump</Link>
       </div>
     </main>
   )

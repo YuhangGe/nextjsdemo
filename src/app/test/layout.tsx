@@ -4,19 +4,19 @@ import Link from "next/link";
 import { ReactNode, useEffect, useState } from "react";
 
 let i = 0;
-export default function Layout({ children }: { children: ReactNode}) {
+export default function Layout({ children }: { children: ReactNode }) {
   useEffect(() => {
-    console.log('layout mounted:', i++)
+    console.log('app layout mounted:', i++)
     return () => {
-      console.log('layout unmm')
+      console.log('app layout unmount')
     }
   }, [])
   return <div>
     <div>
-      <Link href="/dashboard/a">A</Link>
+      <Link href="/test/a">A</Link>
     </div>
     <div>
-      <Link href="/dashboard/b">B</Link>
+      <Link href="/test/b">B</Link>
     </div>
     <div>
       {children}
